@@ -162,6 +162,5 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## Contributors
 
-- Etloaner
-- GPT-5.1 Codex (Cursor AI Pair)
+
 
