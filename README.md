@@ -165,8 +165,7 @@ See detailed metrics, method comparison tables, system performance, and explaina
 
 ## Dataset
 
-- Kaggle: [LinkedIn Job Posts Insights](https://www.kaggle.com/datasets/sachin1993/linkedinjobsindiasc) (31,597 jobs, worldwide)
-- File used: `./linkedin_job_posts_insights.xlsx`
+- Kaggle LinkedIn Job Posts Insights : [linkedin_job_posts_insights](./linkedin_job_posts_insights.xlsx).
 
 ## License
 
