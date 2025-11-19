@@ -1,4 +1,5 @@
 <!-- omit in toc -->
+
 # CSE573 LinkedIn Assistant
 
 An explainable job-search copilot that ingests a resume, stages curated roles from the provided Excel dataset, scores every requirement with Rasch/Guttman math, and chats about apply/network/upskill tactics through a modern multi-step UI.
@@ -120,21 +121,21 @@ cp env.example .env.local
 
 `env.example` exposes two knobs:
 
-| Variable                  | Description                                    | Default                    |
-|--------------------------|------------------------------------------------|----------------------------|
-| `NEXT_PUBLIC_API_BASE_URL` | Browser calls (should remain `/api/backend`)   | `/api/backend`             |
-| `BACKEND_URL`            | Where the proxy forwards requests              | `http://127.0.0.1:8000`    |
+| Variable                   | Description                                  | Default                 |
+| -------------------------- | -------------------------------------------- | ----------------------- |
+| `NEXT_PUBLIC_API_BASE_URL` | Browser calls (should remain `/api/backend`) | `/api/backend`          |
+| `BACKEND_URL`              | Where the proxy forwards requests            | `http://127.0.0.1:8000` |
 
 The backend needs no env vars; it loads the Excel dataset from the repo root on startup and stores everything in memory.
 
 ## Running the Full Stack
 
-1. **Backend**  
+1. **Backend**
    ```bash
    source .venv/bin/activate
    uvicorn backend.app:app --reload
    ```
-2. **Frontend**  
+2. **Frontend**
    ```bash
    cd frontend
    npm run dev
@@ -156,11 +157,18 @@ The backend needs no env vars; it loads the Excel dataset from the repo root on 
    - “Draft a LinkedIn message to a PayPal analytics lead.”
    - “What should I upskill to reach senior analyst level?”
 
+## Evaluation Results
+
+See detailed metrics, method comparison tables, system performance, and explainability analysis in [evaluation.md](./evaluation.md).
+
+---
+
+## Dataset
+
+- Kaggle: [LinkedIn Job Posts Insights](https://www.kaggle.com/datasets/sachin1993/linkedinjobsindiasc) (31,597 jobs, worldwide)
+- File used: `./linkedin_job_posts_insights.xlsx`
+
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
-
-## Contributors
-
-
 
