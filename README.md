@@ -4,6 +4,13 @@
 
 An explainable job-search copilot that ingests a resume, stages curated roles from the provided Excel dataset, scores every requirement with Rasch/Guttman math, and chats about apply/network/upskill tactics through a modern multi-step UI.
 
+## Demo
+
+
+https://github.com/user-attachments/assets/27120385-6443-4224-a12c-2f0f48a4030f
+
+
+
 ## Table of Contents
 
 - [Features](#features)
